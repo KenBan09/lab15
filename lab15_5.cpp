@@ -17,6 +17,20 @@ int main(){
 	
 	return 0;
 }
+void shuffle(int *a,int *b,int *c,int *d){
+	int arr[4] ={ *a, *b, *c, *d};
+	int temp;
+	for( int j = 0; j<4 ; j++){
+		int ran = rand()%4;
+		temp = arr[j];
+		arr[j] = arr[ran];
+		arr[ran] = temp;
+		
+	}
+	*a = arr[0];
+	*b= arr[1];
+	*c = arr[2];
+	*d = arr[3];
 
-//Do not modify the code above this line
-//Write definition of shuffle() using pointer after this line. 
+
+}
