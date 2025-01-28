@@ -29,6 +29,7 @@ void shuffle(int &a,int &b,int &c,int &d){
 		arr[j] = arr[ran];
 		arr[ran] = temp;
 		
+		
 	}
 	a = arr[0];
 	b= arr[1];
